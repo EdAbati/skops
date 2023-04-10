@@ -162,6 +162,8 @@ The output could look like this:
 
 It's also possible to visualize the object dumped as bytes:
 
+.. code-block:: python
+
     import skops.io as sio
     my_model = ...
     sio.visualize(sio.dumps(my_model))
@@ -170,11 +172,13 @@ There are various options to customize the output. By default, the security of
 nodes is color coded if `rich <https://github.com/Textualize/rich>`_ is
 installed, otherwise they all have the same color. To install ``rich``, run:
 
-.. code::
+.. code-block:: console
 
     python -m pip install rich
 
 or, when installing skops, install it like this:
+
+.. code-block:: console
 
     python -m pip install skops[rich]
 
